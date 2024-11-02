@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Gallery with Filter Chips</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="gallery-container">
+    <!-- Chip Buttons -->
+    <div class="chip-container">
+        <button class="chip active" onclick="filterGallery('all')">All</button>
+        <button class="chip" onclick="filterGallery('nature')">Nature</button>
+        <button class="chip" onclick="filterGallery('architecture')">Architecture</button>
+        <button class="chip" onclick="filterGallery('food')">Food</button>
+    </div>
+
+    <!-- Gallery Images -->
+    <div class="gallery">
+        <img src="images/nature1.jpg" class="gallery-item nature" alt="Nature Image">
+        <img src="images/nature2.jpg" class="gallery-item nature" alt="Nature Image">
+        <img src="images/arch1.jpg" class="gallery-item architecture" alt="Architecture Image">
+        <img src="images/arch2.jpg" class="gallery-item architecture" alt="Architecture Image">
+        <img src="images/food1.jpg" class="gallery-item food" alt="Food Image">
+        <img src="images/food2.jpg" class="gallery-item food" alt="Food Image">
+        <img src="images/nature3.jpg" class="gallery-item nature" alt="Nature Image">
+        <img src="images/arch3.jpg" class="gallery-item architecture" alt="Architecture Image">
+        <img src="images/food3.jpg" class="gallery-item food" alt="Food Image">
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
