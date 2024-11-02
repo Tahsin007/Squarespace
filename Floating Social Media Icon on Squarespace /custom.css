@@ -1,0 +1,26 @@
+/* Floating Social Icons*/
+#page {z-index:0;}
+footer {
+  overflow: unset;
+  z-index: 10;
+}
+footer .sqs-svg-icon--wrapper {
+  display: block !important;
+}
+footer .socialaccountlinks-v2-block {
+  pointer-events: none; /*this ensures the icons don't overlap elements within the section*/
+  position: fixed !important;
+  top: 50% !important; /* Change this number to adjust the distance of the icons from the top */
+  left: 45%!important;
+  z-index: 2000000;
+}
+footer .socialaccountlinks-v2-block .sqs-svg-icon--list {
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+}
+footer .socialaccountlinks-v2-block a {
+  margin: 0 0 20px !important; /*Change this number to adjust the spacing of the social icons*/
+  display: inline-block;
+  pointer-events: auto;
+}
